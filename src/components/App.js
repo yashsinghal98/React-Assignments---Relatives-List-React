@@ -3,10 +3,14 @@ import '../styles/App.css';
 
 class App extends Component {
     render() {
-
+        const rel=["YASH","HARSH","HONEY","SID"];
         return(
             <div id="main">
-               {/* Do not remove the main div */}
+            <ol>
+            {
+            rel.map((ele,index)=>{<li key=`relativeListItem${index}`>{ele}</li>});
+            }
+            </ol>
             </div>
         )
     }
