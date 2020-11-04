@@ -6,7 +6,7 @@ class App extends Component {
         const rel=["YASH","HARSH","HONEY","SID"];
         return(
             <div id="main">
-            <ol>
+            <ol key="relativeList">
             {
             rel.map((ele,index)=><li key={`relativeListItem${index+1}`}>{ele}</li>)
             }
